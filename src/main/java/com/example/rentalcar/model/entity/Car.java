@@ -1,7 +1,6 @@
 package com.example.rentalcar.model.entity;
 
 import jakarta.persistence.*;
-
 import java.sql.Blob;
 
 @Entity
@@ -13,7 +12,6 @@ public class Car extends BaseEntity {
     private int capacity;
     private String plateNumber;
     private String chassisNumber;
-    private Blob image;
 
     @Column(name = "car_model")
     public String getModel() {
@@ -70,21 +68,12 @@ public class Car extends BaseEntity {
         this.plateNumber = plateNumber;
     }
 
-    @Column(name = "chasis_number", unique = true)
+    @Column(name = "chassis_number", unique = true)
     public String getChassisNumber() {
         return chassisNumber;
     }
 
     public void setChassisNumber(String chassisNumber) {
         this.chassisNumber = chassisNumber;
-    }
-
-    @Column(name = "attachments")
-    public Blob getImage() {
-        return image;
-    }
-
-    public void setImage(Blob image) {
-        this.image = image;
     }
 }

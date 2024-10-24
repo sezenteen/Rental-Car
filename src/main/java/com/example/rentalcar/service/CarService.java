@@ -1,10 +1,11 @@
 package com.example.rentalcar.service;
 
 import com.example.rentalcar.model.entity.Car;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public interface CarService {
     // Bvh mashinii medeelel harah jagsaalt
     List<Car> getAllCars();
@@ -23,4 +24,6 @@ public interface CarService {
 
     // Neg mashinii medeelel ustgah
     public String deleteCarById(Long id);
+
+    Object deleteCars(List<Car> cars);
 }

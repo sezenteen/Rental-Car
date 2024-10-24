@@ -16,7 +16,6 @@ public class User extends BaseEntity {
     private String phone;
     private String username;
     private String password;
-    private byte[] image; // Change Blob to byte[]
     private Set<Role> roles = new HashSet<>();
 
     @OneToOne
@@ -90,16 +89,6 @@ public class User extends BaseEntity {
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    @Lob // Annotate the byte[] field to indicate it can be large
-    @Column(name = "attachments", nullable = true)
-    public byte[] getImage() {
-        return image;
-    }
-
-    public void setImage(byte[] image) {
-        this.image = image;
     }
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)

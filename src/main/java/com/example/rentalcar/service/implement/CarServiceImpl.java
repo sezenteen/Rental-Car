@@ -37,4 +37,9 @@ public class CarServiceImpl implements CarService {
     public String deleteCarById(Long id) {
         return "";
     }
+
+    @Override
+    public Object deleteCars(List<Car> cars) {
+        return null;
+    }
 }
