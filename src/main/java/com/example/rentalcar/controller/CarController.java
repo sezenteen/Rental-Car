@@ -1,4 +1,4 @@
-package com.example.rentalcar.controller.Api;
+package com.example.rentalcar.controller;
 
 import com.example.rentalcar.model.entity.Car;
 import com.example.rentalcar.service.CarService;

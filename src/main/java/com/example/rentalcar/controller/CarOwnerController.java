@@ -1,4 +1,4 @@
-package com.example.rentalcar.controller.Api;
+package com.example.rentalcar.controller;
 
 import com.example.rentalcar.model.entity.CarOwner;
 import com.example.rentalcar.service.CarOwnerService;
@@ -9,7 +9,7 @@ import java.util.Optional;
 
 @RestController
 public class CarOwnerController {
-    private CarOwnerService carOwnerService;
+    private final CarOwnerService carOwnerService;
 
     public CarOwnerController(CarOwnerService carOwnerService) {
         this.carOwnerService = carOwnerService;
