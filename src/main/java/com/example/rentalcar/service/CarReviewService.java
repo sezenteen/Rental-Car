@@ -13,8 +13,6 @@ public interface CarReviewService {
 
     public CarReview createCarReview(CarReview carReview);
 
-    List<CarReview> getCarReviewsByCarId(List<CarReview> carReviews);
-
     public Optional<CarReview> getCarReviewById(long id);
 
     public CarReview updateCarReview(CarReview carReview);
