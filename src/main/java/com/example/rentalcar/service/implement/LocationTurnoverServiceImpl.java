@@ -28,11 +28,6 @@ public class LocationTurnoverServiceImpl implements LocationTurnoverService {
     }
 
     @Override
-    public LocationTurnover saveLocationTurnover(LocationTurnover locationTurnover) {
-        return null;
-    }
-
-    @Override
     public LocationTurnover updateLocationTurnover(LocationTurnover locationTurnover) {
         return null;
     }

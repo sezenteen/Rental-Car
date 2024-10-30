@@ -9,8 +9,7 @@ import java.util.Optional;
 
 @RestController
 public class CarController {
-    private CarService carService;
-
+    CarService carService;
 
     public CarController(CarService carService) {
         this.carService = carService;
@@ -22,8 +21,13 @@ public class CarController {
     }
 
     @PostMapping("/api/car")
-    public Car addCar(@RequestBody Car car) {
+    public Car createCar(@RequestBody Car car) {
         return carService.createCar(car);
+    }
+
+    @PostMapping("/api/cars")
+    public List<Car> createCars(@RequestBody List<Car> cars) {
+        return carService.createCars(cars);
     }
 
     @GetMapping("/api/car/{id}")
@@ -42,7 +46,7 @@ public class CarController {
     }
 
     @DeleteMapping("/api/cars")
-    public String deleteAllCars(@RequestBody List<Car> cars) {
-        return carService.deleteCars(cars).toString();
+    public List<Car> deleteAllCars() {
+        return carService.deleteAllCars();
     }
 }

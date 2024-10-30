@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class CarReviewServiceImpl implements CarReviewService {
+
     @Override
     public List<CarReview> getAllCarReviews() {
         return List.of();
@@ -15,11 +16,6 @@ public class CarReviewServiceImpl implements CarReviewService {
     @Override
     public CarReview createCarReview(CarReview carReview) {
         return null;
-    }
-
-    @Override
-    public List<CarReview> getCarReviewsByCarId(List<CarReview> carReviews) {
-        return List.of();
     }
 
     @Override

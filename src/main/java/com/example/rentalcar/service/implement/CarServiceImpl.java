@@ -39,7 +39,7 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    public Object deleteCars(List<Car> cars) {
-        return null;
+    public List<Car> deleteAllCars() {
+        return List.of();
     }
 }
