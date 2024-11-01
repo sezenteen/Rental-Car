@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class TransactionController {
+public class TransactionControllerApi {
     TransactionService transactionService;
 
-    public TransactionController(TransactionService transactionService) {
+    public TransactionControllerApi(TransactionService transactionService) {
         this.transactionService = transactionService;
     }
 

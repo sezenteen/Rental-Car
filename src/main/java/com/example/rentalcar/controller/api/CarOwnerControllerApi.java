@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class CarOwnerController {
+public class CarOwnerControllerApi {
     private final CarOwnerService carOwnerService;
 
-    public CarOwnerController(CarOwnerService carOwnerService) {
+    public CarOwnerControllerApi(CarOwnerService carOwnerService) {
         this.carOwnerService = carOwnerService;
     }
 

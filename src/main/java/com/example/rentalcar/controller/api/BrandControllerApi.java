@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class BrandController {
+public class BrandControllerApi {
     BrandService brandService;
 
-    public BrandController(BrandService brandService) {
+    public BrandControllerApi(BrandService brandService) {
         this.brandService = brandService;
     }
 

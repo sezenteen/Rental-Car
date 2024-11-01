@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class ClientSupportController {
+public class ClientSupportControllerApi {
     ClientSupportService clientSupportService;
 
-    public ClientSupportController(ClientSupportService clientSupportService) {
+    public ClientSupportControllerApi(ClientSupportService clientSupportService) {
         this.clientSupportService = clientSupportService;
     }
 

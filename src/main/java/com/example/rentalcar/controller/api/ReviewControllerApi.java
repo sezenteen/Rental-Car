@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class ReviewController {
+public class ReviewControllerApi {
     ReviewService reviewService;
 
-    public ReviewController(ReviewService reviewService) {
+    public ReviewControllerApi(ReviewService reviewService) {
         this.reviewService = reviewService;
     }
 

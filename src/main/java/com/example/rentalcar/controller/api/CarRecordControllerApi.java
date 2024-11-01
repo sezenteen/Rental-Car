@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class CarRecordController {
+public class CarRecordControllerApi {
     private final CarService carService;
     private final CarRecordService carRecordService;
 
-    public CarRecordController(CarService carService, CarRecordService carRecordService) {
+    public CarRecordControllerApi(CarService carService, CarRecordService carRecordService) {
         this.carService = carService;
         this.carRecordService = carRecordService;
     }

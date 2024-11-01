@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class LocationTurnoverController {
+public class LocationTurnoverControllerApi {
     LocationTurnoverService locationTurnoverService;
 
-    public LocationTurnoverController(LocationTurnoverService locationTurnoverService) {
+    public LocationTurnoverControllerApi(LocationTurnoverService locationTurnoverService) {
         this.locationTurnoverService = locationTurnoverService;
     }
 

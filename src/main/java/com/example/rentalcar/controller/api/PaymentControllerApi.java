@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class PaymentController {
+public class PaymentControllerApi {
     PaymentService paymentService;
 
-    public PaymentController(PaymentService paymentService) {
+    public PaymentControllerApi(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
 

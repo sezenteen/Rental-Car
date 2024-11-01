@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class ReportsAuditController {
+public class ReportsAuditControllerApi {
     ReportsAuditService reportsAuditService;
 
-    public ReportsAuditController(ReportsAuditService reportsAuditService) {
+    public ReportsAuditControllerApi(ReportsAuditService reportsAuditService) {
         this.reportsAuditService = reportsAuditService;
     }
 

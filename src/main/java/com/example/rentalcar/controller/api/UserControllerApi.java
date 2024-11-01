@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-public class UserController {
+public class UserControllerApi {
     UserService userService;
 
-    public UserController(UserService userService) {
+    public UserControllerApi(UserService userService) {
         this.userService = userService;
     }
 
