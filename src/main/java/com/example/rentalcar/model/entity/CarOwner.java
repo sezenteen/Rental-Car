@@ -10,7 +10,7 @@ public class CarOwner extends BaseEntity {
     private User user;
 
     @OneToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false, unique = false)
     public User getUser() {
         return user;
     }

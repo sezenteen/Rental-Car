@@ -13,7 +13,7 @@ public class Review extends BaseEntity{
     private Date timestamp;
 
     @OneToOne
-    @JoinColumn(name = "transaction_id", nullable = false)
+    @JoinColumn(name = "transaction_id", nullable = false, unique = false)
     public Transaction getTransaction() {
         return transaction;
     }
@@ -23,7 +23,7 @@ public class Review extends BaseEntity{
     }
 
     @OneToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false, unique = false)
     public User getUser() {
         return user;
     }
@@ -33,7 +33,7 @@ public class Review extends BaseEntity{
     }
 
     @OneToOne
-    @JoinColumn(name = "owner_id", nullable = false)
+    @JoinColumn(name = "owner_id", nullable = false, unique = false)
     public CarOwner getCarOwner() {
         return carOwner;
     }

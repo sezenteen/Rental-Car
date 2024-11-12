@@ -23,7 +23,7 @@ public class Car extends BaseEntity {
     }
 
     @OneToOne
-    @JoinColumn(name = "brand_id", nullable = false)
+    @JoinColumn(name = "brand_id", unique = false)
     public Brand getBrand() {
         return brand;
     }

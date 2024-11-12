@@ -14,7 +14,7 @@ public class ClientSupport extends BaseEntity {
     private Date timestamp;
 
     @OneToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false, unique = false)
     public User getUser() {
         return user;
     }

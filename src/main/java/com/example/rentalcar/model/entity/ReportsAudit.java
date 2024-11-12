@@ -14,7 +14,7 @@ public class ReportsAudit extends BaseEntity {
     private Date dateAdded;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false, unique = false)
     public User getUser() {
         return user;
     }

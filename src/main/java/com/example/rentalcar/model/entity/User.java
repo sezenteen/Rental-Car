@@ -19,7 +19,7 @@ public class User extends BaseEntity {
     private Set<Role> roles = new HashSet<>();
 
     @OneToOne
-    @JoinColumn(name = "user_type_id", nullable = false)
+    @JoinColumn(name = "user_type_id", unique = false)
     public UserType getUserType() {
         return userType;
     }
@@ -94,7 +94,7 @@ public class User extends BaseEntity {
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(
             name = "user_roles",
-            joinColumns = @JoinColumn(name = "user_id"),
+            joinColumns = @JoinColumn(name = "user_id", unique = false),
             inverseJoinColumns = @JoinColumn(name = "role_id")
     )
     public Set<Role> getRoles() {

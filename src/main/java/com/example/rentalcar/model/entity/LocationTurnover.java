@@ -14,7 +14,7 @@ public class LocationTurnover extends BaseEntity{
     private Date timestamp;
 
     @ManyToOne
-    @JoinColumn(name = "transaction_id")
+    @JoinColumn(name = "transaction_id", unique = false)
     public Transaction getTransaction() {
         return transaction;
     }

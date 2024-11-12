@@ -15,7 +15,7 @@ public class Payment extends BaseEntity{
     private Date timestamp;
 
     @OneToOne
-    @JoinColumn(name = "payment_id", nullable = false)
+    @JoinColumn(name = "payment_id", nullable = false, unique = false)
     public ModeOfPayment getModeOfPayment() {
         return modeOfPayment;
     }

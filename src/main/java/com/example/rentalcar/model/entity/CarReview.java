@@ -16,7 +16,7 @@ public class CarReview extends BaseEntity{
     private Date timestamp;
 
     @OneToOne
-    @JoinColumn(name = "transaction_id")
+    @JoinColumn(name = "transaction_id", unique = false )
     public Transaction getTransaction() {
         return transaction;
     }
@@ -26,7 +26,7 @@ public class CarReview extends BaseEntity{
     }
 
     @OneToOne
-    @JoinColumn(name = "car_id")
+    @JoinColumn(name = "car_id", unique = false)
     public Car getCar() {
         return car;
     }

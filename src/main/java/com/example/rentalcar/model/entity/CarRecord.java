@@ -11,7 +11,7 @@ public class CarRecord extends BaseEntity {
     private Date dateAdded;
 
     @ManyToOne
-    @JoinColumn(name = "owner_id", nullable = false)
+    @JoinColumn(name = "owner_id", nullable = false, unique = false)
     public CarOwner getCarOwner() {
         return carOwner;
     }

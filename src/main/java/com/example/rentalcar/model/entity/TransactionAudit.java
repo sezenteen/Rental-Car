@@ -14,7 +14,7 @@ public class TransactionAudit extends BaseEntity {
     private Date dateAdded;
 
     @ManyToOne
-    @JoinColumn(name = "transaction", nullable = false)
+    @JoinColumn(name = "transaction", nullable = false, unique = false)
     public Transaction getTransaction() {
         return transaction;
     }
