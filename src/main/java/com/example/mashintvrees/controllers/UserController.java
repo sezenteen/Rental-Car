@@ -51,10 +51,12 @@ public class UserController {
     }
 
     // DELETE
+    @DeleteMapping("/user")
     public String deleteUser(long id) {
         return userService.deleteUser(id);
     }
 
+    @DeleteMapping("/users")
     public List<User> deleteUsers(@RequestBody List<User> users) {
         return userService.deleteUsers(users);
     }

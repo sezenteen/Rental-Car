@@ -44,7 +44,7 @@ public class Payment extends BaseEntity{
         this.amount = amount;
     }
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated
     @Column(name = "payment_type", nullable = false, unique = false)
     public Method getMethod() {
         return method;
