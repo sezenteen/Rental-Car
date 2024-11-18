@@ -3,6 +3,7 @@ package com.example.mashintvrees.model;
 import com.example.mashintvrees.model.enums.Status;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.validation.constraints.*;
 
@@ -69,7 +70,7 @@ public class Car extends BaseEntity{
         this.dailyPrice = dailyPrice;
     }
 
-    @Enumerated
+    @Enumerated(EnumType.STRING)
     @Column(name = "status", unique = false, nullable = false)
     public Status getStatus() {
         return status;

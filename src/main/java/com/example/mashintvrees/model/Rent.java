@@ -15,7 +15,7 @@ public class Rent extends BaseEntity{
     private BigDecimal totalPrice;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_id", nullable = false)
     public User getUser() {
         return user;
     }
@@ -25,7 +25,7 @@ public class Rent extends BaseEntity{
     }
 
     @ManyToOne
-    @JoinColumn(name = "car_id")
+    @JoinColumn(name = "car_id", nullable = false)
     public Car getCar() {
         return car;
     }
@@ -52,7 +52,7 @@ public class Rent extends BaseEntity{
         this.endDate = endDate;
     }
 
-    @Column(name = "total_name", nullable = false, unique = false)
+    @Column(name = "total_price", nullable = false, unique = false)
     public BigDecimal getTotalPrice() {
         return totalPrice;
     }
